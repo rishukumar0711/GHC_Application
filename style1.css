@@ -1,0 +1,135 @@
+:root {
+  --primary: hsl(296, 49%, 68%);
+  --secondary: #28c90cc7;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Sofia&display=swap');
+
+* {
+  font-family: "Libertinus", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(imgBack.png) no-repeat center center/cover;
+}
+
+/* Heading Section */
+.container1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 20px 40px 20px;
+  color: #38bdf8;
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid #87c5e0;
+  text-shadow:
+    1px 1px 0px #0e7490,
+    2px 2px 0px #155e75,
+    3px 3px 0px #164e63,
+    4px 4px 6px rgba(208, 11, 11, 0.6);
+  transition: all 0.3s ease;
+}
+
+
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  color: var(--secondary);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--secondary);
+  padding-bottom: 5px;
+}
+
+section {
+  padding: 20px;
+}
+
+.skill-list li {
+  background: rgb(231, 196, 233);
+  padding: 12px;
+
+  margin-bottom: 8px;
+  border-left: 6px solid var(--secondary);
+  box-shadow: 0 1px 3px rgba(171, 204, 6, 0.1);
+  list-style-type: none;
+}
+
+
+#about p {
+  font-size: 1.2em;
+  color: var(--primary);
+  text-align: justify;
+}
+
+#contact p {
+  color: var(--primary);
+  font-size: 1.1em;
+}
+
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 2px 0 6px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.side-bar ul {
+  top: 0px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.side-bar li {
+  margin: 10px 0;
+  padding: 10px 20px;
+  transition: all 0.3s linear;
+}
+
+.side-bar a {
+  color: var(--secondary);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.side-bar i {
+  color: var(--secondary);
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.side-bar li:hover {
+  border-left: 3px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#proj li{
+  font-size: 1.2em;
+
+}
+#proj li a{
+  text-decoration: none;
+  color: var(--primary);
+}
